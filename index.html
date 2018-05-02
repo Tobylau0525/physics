@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      /* Set width to 100% */
+      margin: auto;
+      min-height: 200px;
+    }
+    #weather{
+      margin-top:10px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="#">Physic</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#myCarousel">What's new</a></li>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#topic">Topic</a></li>
+          <li><a href="#lab">Lab</a></li>
+          <li><a href="#practice">Practice question</a></li>
+        </ul>
+        <!--<ul class="nav navbar-nav navbar-right">-->
+        <!--  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+        <!--</ul>-->
+      </div>
+    </div>
+  </nav>
+  <div>
+    <div id="home">
+      <br>
+      <br>
+
+      <a id="weather" class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original">NEW YORK Weather</a>
+      <script>
+        ! function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'weatherwidget-io-js');
+      </script>
+  </div>
+
+
+
+
+  </div>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <a href="https://www.newscientist.com/article/mg21729062-400-physics-crunch-is-mathematics-the-root-of-reality" target="_blank">
+        <img src="img/royal_astronomical_society.jpg" alt="Image"></a>
+        <div class="carousel-caption text-center vert-center">
+          <h3>Mathematics</h3>
+          <h4>Is mathematics the root of reality?</h4>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.newscientist.com/article/mg21729062-500-physics-crunch-the-dark-void-at-cosmologys-heart" target="_blank">
+        <img src="img/dark_void.jpg" alt="Image"></a>
+        <div class="carousel-caption">
+          <h3>Big bang cosmology</h3>
+          <h4>The dark void at cosmology’s heart</h4>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.newscientist.com/article/mg21729062-600-physics-crunch-higgs-smashes-into-a-dead-end/" target="_blank">
+        <img src="img/higgs.jpg" alt="Image"></a>
+        <div class="carousel-caption">
+          <h3>Standard model</h3>
+          <h4>Higgs smashes into a dead end</h4>
+        </div>
+      </div>
+
+      <div class="item">
+        <a href="https://www.newscientist.com/article/mg21729062-700-physics-crunch-desperately-seeking-everything/" target="_blank">
+        <img src="img/ultimate_theory.jpg" alt="Image"></a>
+        <div class="carousel-caption">
+          <h3>Theories of everything</h3>
+          <h4>Desperately seeking everything</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container text-center" id="intro">
+    <h1>An intro of Physic</h1>
+    <h2>What is physic?</h2>
+    <h4>The dictionary definition of physics is “the study of matter, energy, and the interaction between them</h4>
+    <h3>BUT</h3>
+    <h4>what that really means is that physics is about asking fundamental questions and trying to answer them by observing and experimenting.</h4>
+
+    <h2>The Fundamental Laws of Physics</h2>
+    <h4>The goal of physics is to develop precise models of physical reality. The best case scenario is to develop a series of very fundamental rules to describe how these models function. These rules are frequently called "laws" after they have been used
+      successfully for many years</h4>
+    <div class="page-header">
+      <h2>What Is Considered Physics?</h2>
+    </div>
+    <div>
+      <h4>To begin the study of physics, you must first understand what physics actually means. Understanding what falls within the realm of physics—and what does not—helps focus the field of study so you can formulate meaningful physics questions.</h4>
+
+      <h4>Behind every question in physics lies four very important terms you will want to understand: hypothesis, model, theory and law. </h4>
+
+      <h4>Physics can be either experimental or theoretical. In experimental physics, physicists address a scientific problem using techniques such as the scientific method in an attempt to prove a hypothesis. Theoretical physics is often more conceptual
+        in that physicists are focused on developing scientific laws, such as the theory of quantum mechanics.</h4>
+
+      <h4>These two forms of physics are related to each other and connected to other forms of scientific study.</h4>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-4 jumbotron" id="topic">
+        <h3>Topic:</h3>
+        <h4><strong>Kinematics: Objects in Motion</strong></h4>
+        <h5><a href="translational_motion.html">Translational Motion</a></h5>
+        <h6><a href="motion_in_a_straight_line.html">Motion in a straight line</a></h6>
+        <h6><a href="newton_law_of_motion.html">Newton's Laws of Motion</a></h6>
+        <h6><a href="work_power_and_energy.html">Work, Power, and Energy</a></h6>
+        <h6><a href="gravity.html">Gravity</a></h6>
+        <h6><a href="motion_in_two_dimensions.html">Motion in two dimensions</a></h6>
+
+      </div>
+      <div class="col-sm-4 jumbotron ">
+        <h3>Topic</h3>
+        <h4><strong>Rotational Motion</strong></h4>
+        <h6><a href="">Circular Motion</a></h6>
+        <h6><a href="">Angular Velocity</a></h6>
+        <h6><a href="">Centripetal acceleration</a></h6>
+        <h6><a href="">Center of mass</a></h6>
+        <h6><a href="">Torque and Angular Acceleration</a></h6>
+        <h6><a href="">Moment of Inertia</a></h6>
+        <h6> </h6>
+        <h6> </h6>
+        <h6> </h6>
+        <h6> </h6>
+
+      </div>
+      <div class="col-sm-4 jumbotron">
+        <h3>Topic</h3>
+        <h4><strong>Fluid Mechanics</strong></h4>
+        <h6><a href="">Hydrostatics: Fluids at Rest</a></h6>
+        <h6><a href="">Hydrodynamics: Fluids in Motion</a></h6>
+        <h4><strong>Thermodynamics</strong></h4>
+        <h6><a href="">Basic Definitions</a></h6>
+        <h6><a href="">Zeroth Law of Thermodynamics</a></h6>
+        <h6><a href="">First Law of Thermodynamics</a></h6>
+        <h6><a href="">Second Law of Thermodynamics</a></h6>
+        <h6><a href="">Third Law of Thermodynamics</h6>
+
+      </div>
+    </div>
+    <div class="col-sm-12 jumbotron text-center" id="lab">
+      <h4>Lab</h4>
+
+    </div>
+
+    <footer class="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer>
+
+</body>
+
+</html>
