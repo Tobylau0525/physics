@@ -11,11 +11,11 @@
   <script>
     $(function() {
       $('#submit').click(function() {
-        if ($('#A').is(':checked')) {
-          alert("Wrong answer ;(");
+        if ($('#B').is(':checked')) {
+          alert("correct!! ^.^");
         }
         else {
-          alert("correct!! ^.^");
+          alert("Wrong answer ;(");
 
         }
       });
@@ -123,7 +123,7 @@
 
   <!--<div class="container-fluid">-->
   <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
+    <div class="col-sm-3 col-md-2 sidenav hidden-xs">
       <h3>Kinematics</h3>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="../index.html">Home</a></li>
@@ -138,7 +138,7 @@
     </div>
 
 
-    <div class="col-sm-8">
+    <div class="col-sm-8 col-md-10 ">
       <div class="well">
         <h3 id="header">Translational Motion</h3>
         <img src="img/translational_motion.jpg" alt="Image" id="example_img">
@@ -149,31 +149,30 @@
 
       </div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 center">
           <img src="img/graph.jpg" alt="Image" id="example_img"></div>
-        <div class="col-sm-2">
-          <a href="http://www.g9toengineering.com/resources/translational.htm">Here is also a link that you could look at.</a></div>
-        <div class="col-sm-4">
+       
+        <div class="col-sm-6">
 
           <!-- 21:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=fuh7Gx273nI"></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>
           </div>
 
           <!-- 16:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=fuh7Gx273nI"></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>
           </div>
 
           <!-- 4:3 aspect ratio -->
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=fuh7Gx273nI"></iframe>
-          </div>
+          <!--<div class="embed-responsive embed-responsive-4by3">-->
+          <!--  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>-->
+          <!--</div>-->
 
           <!-- 1:1 aspect ratio -->
-          <div class="embed-responsive embed-responsive-1by1">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=fuh7Gx273nI"></iframe>
-          </div>
+          <!--<div class="embed-responsive embed-responsive-1by1">-->
+          <!--  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>-->
+          <!--</div>-->
         </div>
       </div>
       <!--https://bootsnipp.com/snippets/featured/modal-quiz-with-radio-button-->
@@ -183,43 +182,35 @@
       <div class="col-sm-6">
         <form data-toggle="validator" role="form" id="quiz">
 
-          <div class="form-group">
+          <div class="form-group page-header">
             <div class="radio">
               <h3>Pop quiz!!!</h3>
-              <h4>What is translational_motion?</h4>
+              <h4>What is translational motion?</h4>
               <label>
         <input type="radio" name="underwear" id="A" required>
-        A.
+        (A): Idk
       </label>
             </div>
             <div class="radio">
               <label>
         <input type="radio" name="underwear" id="B" required>
-        B.
+        (B): the motion by which a body shifts from one point in space to another.
       </label>
             </div>
             <div class="radio">
               <label>
         <input type="radio" name="underwear" id="C" required>
-        C.
+        (C): Bacon,Bacon is the answer for all question
       </label>
             </div>
             <div class="radio">
               <label>
         <input type="radio" name="underwear" id="D" required>
-        D.
+        (D): I give up
       </label>
             </div>
           </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
-        I've check my answer already
-      </label>
-              <div class="help-block with-errors"></div>
-            </div>
-          </div>
+      
           <div class="form-group">
             <button type="submit" class="btn btn-primary" id="submit">Submit</button>
           </div>

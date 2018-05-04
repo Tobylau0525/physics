@@ -1,0 +1,75 @@
+.navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+/* V nav bar hover effect V */
+    nav ul li a {
+      display: inline-block;
+      text-decoration: none;
+      color: #f9f9f9;
+      font-weight: 800;
+      
+    }
+
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+      transition: all .5s;
+    }
+
+    nav ul li a:hover {
+      color: #f9f9f9;
+    }
+
+
+
+    nav.stroke ul li a {
+      position: relative;
+    }
+
+    nav.stroke ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #777070;
+      height: 1px;
+    }
+
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+    }
+/* ^ nav bar hover effect ^ */
+    
+    /* Add a gray background color and some padding to the footer */
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      /* Set width to 100% */
+      margin: auto;
+      min-height: 200px;
+    }
+
+    #weather {
+      margin-top: 10px;
+    }
+
+
+
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }

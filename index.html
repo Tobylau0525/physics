@@ -2,44 +2,28 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Physic</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <link rel="stylesheet" href="custom.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      // var header = document.getElementById("navbar_current");
+      // var pages = header.getElementsByClassName("page");
+      // for (var i = 0; i < pages.length; i++) {
+      //   pages[i].addEventListener("click", function() {
+      //     var current = document.getElementsByClassName("active");
+      //     current[0].className = current[0].className.replace(" active", "");
+      //     this.className += " active";
+      //   });
+      // }
+    });
+  </script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    }
-
-    /* Add a gray background color and some padding to the footer */
-
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-
-    .carousel-inner img {
-      width: 100%;
-      /* Set width to 100% */
-      margin: auto;
-      min-height: 200px;
-    }
-    #weather{
-      margin-top:10px;
-    }
-
-    /* Hide the carousel text when the screen is less than 600 pixels wide */
-
-    @media (max-width: 600px) {
-      .carousel-caption {
-        display: none;
-      }
-    }
   </style>
 </head>
 
@@ -87,7 +71,7 @@
           }
         }(document, 'script', 'weatherwidget-io-js');
       </script>
-  </div>
+    </div>
 
 
 
@@ -208,7 +192,7 @@
         <h3>Topic</h3>
         <h4><strong>Fluid Mechanics</strong></h4>
         <h6><a href="fluid_mechanics/">Hydrostatics: Fluids at Rest</a></h6>
-        <h6><a href="fluid_mechanics/">Hydrodynamics: Fluids in Motion</h6>
+        <h6><a href="fluid_mechanics/">Hydrodynamics: Fluids in Motion</a></h6>
         <h4><strong>Thermodynamics</strong></h4>
         <h6><a href="thermodynamics/">Basic Definitions</h6>
         <h6><a href="thermodynamics/">Zeroth Law of Thermodynamics</h6>
@@ -220,11 +204,13 @@
     </div>
     <div class="col-sm-12 jumbotron text-center" id="lab">
       <h4>Lab</h4>
-
+       <!--https://phet.colorado.edu/en/simulations/category/physics/motion-->
     </div>
 
     <footer class="container-fluid text-center">
-      <p>Footer Text</p>
+      <p>Practice question</p>
+      
+      
     </footer>
 
 </body>
