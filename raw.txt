@@ -1,23 +1,2 @@
------------------------------------------
-Planner:https://wireframe.cc/pro/edit/162588
-------------------------------------------
-(intro)
-What is physic?
-The dictionary definition of physics is “the study of matter, energy, and the interaction between them”, 
-but what that really means is that physics is about asking fundamental questions and trying to answer them by observing and experimenting.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-The Fundamental Laws of Physics
-The goal of physics is to develop precise models of physical reality.
-The best case scenario is to develop a series of very fundamental rules to describe how these models function. 
-These rules are frequently called "laws" after they have been used successfully for many years.;
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-What Is Considered Physics?
-To begin the study of physics, you must first understand what physics actually means. Understanding what falls within the realm of physics—and what does not—helps focus the field of study so you can formulate meaningful physics questions.
 
-Behind every question in physics lies four very important terms you will want to understand: hypothesis, model, theory and law. 
-
-Physics can be either experimental or theoretical. In experimental physics, physicists address a scientific problem using techniques such as the scientific method in an attempt to prove a hypothesis. Theoretical physics is often more conceptual in that physicists are focused on developing scientific laws, such as the theory of quantum mechanics. 
-
-These two forms of physics are related to each other and connected to other forms of scientific study.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-(/intro)
+<a href="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light-600.png" alt="Bending Light" style="border: none;" width="300" height="200"/></a>

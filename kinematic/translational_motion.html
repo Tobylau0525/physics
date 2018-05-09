@@ -6,8 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <script>
     $(function() {
       $('#submit').click(function() {
@@ -29,6 +32,8 @@
       height: 550px
     }
 
+
+
     /* Set gray background color and 100% height */
 
     .sidenav {
@@ -47,6 +52,13 @@
     div>div>img {
       font-size: 25px;
 
+    }
+
+    h3 {
+     font-family: 'Anton', sans-serif;
+    }
+    h4,h5,p{
+      font-family: 'Fjalla One', sans-serif;
     }
 
     #quiz {
@@ -151,17 +163,17 @@
       <div class="row">
         <div class="col-sm-6 center">
           <img src="img/graph.jpg" alt="Image" id="example_img"></div>
-       
+
         <div class="col-sm-6">
 
           <!-- 21:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI"></iframe>
           </div>
 
           <!-- 16:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI"></iframe>
           </div>
 
           <!-- 4:3 aspect ratio -->
@@ -179,10 +191,10 @@
       <!--https://bootsnipp.com/tags/radio-->
 
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 ">
         <form data-toggle="validator" role="form" id="quiz">
 
-          <div class="form-group page-header">
+          <div class="form-group ">
             <div class="radio">
               <h3>Pop quiz!!!</h3>
               <h4>What is translational motion?</h4>
@@ -210,7 +222,7 @@
       </label>
             </div>
           </div>
-      
+
           <div class="form-group">
             <button type="submit" class="btn btn-primary" id="submit">Submit</button>
           </div>
