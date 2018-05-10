@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-  <title>Kinematics</title>
+  <title>Thermodynamics</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="../topic.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script>
     $(function() {
       $('#submit').click(function() {
-        if ($('#B').is(':checked')) {
+        if ($('#C').is(':checked')) {
           alert("correct!! ^.^");
         }
         else {
@@ -28,84 +29,7 @@
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 
-    .row.content {
-      height: 550px
-    }
-
-
-
-    /* Set gray background color and 100% height */
-
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-      width: 15%;
-    }
-
-    #example_img {
-      height: 100%;
-      width: 100%;
-      position: relative;
-
-    }
-
-    div>div>img {
-      font-size: 25px;
-
-    }
-
-    h3 {
-      font-family: 'Anton', sans-serif;
-    }
-
-    h4,
-    h5,
-    p {
-      font-family: 'Fjalla One', sans-serif;
-    }
-
-    #quiz {
-      margin-left: 50px;
-    }
-
-    /* On small screens, set height to 'auto' for the grid */
-
-    @media screen and (max-width: 767px) {
-      .row.content {
-        height: auto;
-      }
-      #example_img {
-        width: 100%
-      }
-      p {
-        font-size: 20px
-      }
-    }
-
-    @media only screen and (min-width: 992px) {
-      #example_img {
-        width: 80%
-      }
-      p {
-        font-size: 35px
-      }
-      #header {
-        font-size: 50px
-      }
-
-    }
-
-    @media only screen and (min-width: 1200px) {
-      #example_img {
-        width: 70%
-      }
-      p {
-        font-size: 35px
-      }
-      #header {
-        font-size: 50px
-      }
-    }
+    
   </style>
 </head>
 
@@ -119,17 +43,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Kinematics</a>
+      <a class="navbar-brand" href="#">Thermodynamics</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="../index.html">Home</a></li>
-        <li><a href="translational_motion.html">Translational Motion</a></li>
-        <li><a href="motion_in_a_straight_line.html">Motion in a straight line</a></li>
-        <li><a href="newton_law_of_motion.html">Newton's Laws of Motion</a></li>
-        <li><a href="work_power_and_energy.html">Work, Power, and Energy</a></li>
-        <li><a href="gravity.html">Gravity</a></li>
-        <li><a href="motion_in_two_dimensions.html">Motion in two dimensions</a></li>
+        <li><a href="basic_def.html">Basic Definition of Thermodynamics</a></li>
+        <li><a href="first_law_of_Thermodynamics.html">First Law of Thermodynamics</a></li>
+        <li><a href="second_law_of_Thermodynamics.html">Second Law of Thermodynamics</a></li>
+        <li><a href="third_law_of_Thermodynamics.html">Third Law of Thermodynamics</a></li>
+        <li><a href="zeroth_law_of_Thermodynamics.html">Zeroth Law of Thermodynamics</a></li>
+        
 
       </ul>
       <!--</div>-->
@@ -139,15 +63,14 @@
   <!--<div class="container-fluid">-->
   <div class="row content">
     <div class="col-sm-3 col-md-2 sidenav hidden-xs">
-      <h3>Kinematics</h3>
+      <h3>Thermodynamics</h3>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="../index.html">Home</a></li>
-        <li><a href="translational_motion.html">Translational Motion</a></li>
-        <li><a href="motion_in_a_straight_line.html">Motion in a straight line</a></li>
-        <li><a href="newton_law_of_motion.html">Newton's Laws of Motion</a></li>
-        <li><a href="work_power_and_energy.html">Work, Power, and Energy</a></li>
-        <li><a href="gravity.html">Gravity</a></li>
-        <li><a href="motion_in_two_dimensions.html">Motion in two dimensions</a></li>
+        <li><a href="basic_def.html">Basic Definition of Thermodynamics</a></li>
+        <li><a href="first_law_of_Thermodynamics.html">First Law of Thermodynamics</a></li>
+        <li><a href="second_law_of_Thermodynamics.html">Second Law of Thermodynamics</a></li>
+        <li><a href="third_law_of_Thermodynamics.html">Third Law of Thermodynamics</a></li>
+        <li><a href="zeroth_law_of_Thermodynamics.html">Zeroth Law of Thermodynamics</a></li>
 
       </ul>
     </div>
@@ -156,8 +79,8 @@
     <div class="col-sm-8 col-md-10 ">
       <div class="well">
         <h3 id="header">Zeroth Law of Thermodynamics</h3>
-        <img src="img/translational_motion.jpg" alt="Image" id="example_img">
-        <p>Translational motion is the motion by which a body shifts from one point in space to another. One example of translational motion is the the motion of a bullet fired from a gun.</p>
+        <img src="img/basic_definitions_of_thermodynamics.jpg" alt="Image" id="example_img">
+        <p>if two thermodynamic systems are each in thermal equilibrium with a third, then they are in thermal equilibrium with each other. Accordingly, thermal equilibrium between systems is a transitive relation.</p>
 
 
 
@@ -192,10 +115,10 @@
           <div class="form-group ">
             <div class="radio">
               <h3>Pop quiz!!!</h3>
-              <h4>What is translational motion?</h4>
+              <h4>What is the Zeroth law of thermodynamics?</h4>
               <label>
         <input type="radio" name="underwear" id="A" required>
-        (A): Idk
+        (A):I=mr^2 or τ=Iα
       </label>
             </div>
             <div class="radio">
@@ -207,13 +130,13 @@
             <div class="radio">
               <label>
         <input type="radio" name="underwear" id="C" required>
-        (C): Bacon,Bacon is the answer for all question
+        (C): if two thermodynamic systems are each in thermal equilibrium with a third, then they are in thermal equilibrium with each other. Accordingly, thermal equilibrium between systems is a transitive relation.
       </label>
             </div>
             <div class="radio">
               <label>
         <input type="radio" name="underwear" id="D" required>
-        (D): I give up
+        (D): the rate of change of angular position of a rotating body.
       </label>
             </div>
           </div>
