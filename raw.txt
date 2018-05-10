@@ -1,2 +1,0 @@
-
-<a href="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light-600.png" alt="Bending Light" style="border: none;" width="300" height="200"/></a>

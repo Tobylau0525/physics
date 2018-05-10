@@ -9,22 +9,13 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
   <link rel="stylesheet" href="custom.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
-    $(function() {
-      // Add slideDown animation to Bootstrap dropdown when expanding.
-      $('.dropdown').on('show.bs.dropdown', function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-      });
-
-      // Add slideUp animation to Bootstrap dropdown when collapsing.
-      $('.dropdown').on('hide.bs.dropdown', function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-      });
-    });
   </script>
   <style>
   </style>
@@ -50,34 +41,8 @@
           <li><a href="#intro">intro</a></li>
           <li><a href="#topic">Topic</a></li>
           <li><a href="#lab">Lab</a></li>
-          <li><a href="#practice">Practice question</a></li>
-
-          <!--<li class="dropdown">-->
-          <!--  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topic<span class="caret"></span></a>-->
-          <!--  <ul class="dropdown-menu">-->
-          <!--    <li><a href="#">Submenu 1-1</a></li>-->
-          <!--    <li><a href="#">Submenu 1-2</a></li>-->
-          <!--    <li><a href="#">Submenu 1-3</a></li>                        -->
-          <!--  </ul>-->
-          <!--</li>-->
-          <!--  <li class="dropdown">-->
-          <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lab<span class="caret"></span></a>-->
-          <!--    <ul class="dropdown-menu">-->
-          <!--      <li><a href="#">Submenu 1-1</a></li>-->
-          <!--      <li><a href="#">Submenu 1-2</a></li>-->
-          <!--      <li><a href="#">Submenu 1-3</a></li>                        -->
-          <!--    </ul>-->
-          <!--  </li>-->
-          <!--  <li class="dropdown">-->
-          <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#practice">practice question<span class="caret"></span></a>-->
-          <!--    <ul class="dropdown-menu">-->
-          <!--      <li><a href="#">Submenu 1-1</a></li>-->
-          <!--      <li><a href="#">Submenu 1-2</a></li>-->
-          <!--      <li><a href="#">Submenu 1-3</a></li>                        -->
-          <!--    </ul>-->
-          <!--  </li>-->
-          <!--</ul>-->
-
+          <li><a href="#credit">Credit</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -227,7 +192,7 @@
         <div class="col-sm-4 jumbotron" id="topic">
           <h3>Topic</h3>
           <h4><strong>Kinematics: Objects in Motion</strong></h4>
-          <h5><a href="kinematic/translational_motion.html">Translational Motion</a></h5>
+          <h6><a href="kinematic/translational_motion.html">Translational Motion</a></h6>
           <h6><a href="kinematic/motion_in_a_straight_line.html">Motion in a straight line</a></h6>
           <h6><a href="kinematic/newton_law_of_motion.html">Newton's Laws of Motion</a></h6>
           <h6><a href="kinematic/work_power_and_energy.html">Work, Power, and Energy</a></h6>
@@ -238,12 +203,12 @@
         <div class="col-sm-4 jumbotron ">
           <h3>Topic</h3>
           <h4><strong>Rotational Motion</strong></h4>
-          <h6><a href="rotational_motion/">Circular Motion</a></h6>
-          <h6><a href="rotational_motion/">Angular Velocity</a></h6>
-          <h6><a href="rotational_motion/">Centripetal acceleration</a></h6>
-          <h6><a href="rotational_motion/">Center of mass</a></h6>
-          <h6><a href="rotational_motion/">Torque and Angular Acceleration</a></h6>
-          <h6><a href="rotational_motion/">Moment of Inertia</a></h6>
+          <h6><a href="rotational_motion/circular_motion.html">Circular Motion</a></h6>
+          <h6><a href="rotational_motion/angular_velocity.html">Angular Velocity</a></h6>
+          <h6><a href="rotational_motion/centripetal_acceleration.html">Centripetal acceleration</a></h6>
+          <h6><a href="rotational_motion/center_of_mass.html">Center of mass</a></h6>
+          <h6><a href="rotational_motion/torque_and_angular_acceleration.html">Torque and Angular Acceleration</a></h6>
+          <h6><a href="rotational_motion/moment_of_inertia.html">Moment of Inertia</a></h6>
           <h6> </h6>
           <h6> </h6>
           <h6> </h6>
@@ -296,16 +261,16 @@
 
         <div class="row">
           <div class="col-sm-4">
-            
-              <h3 class="page-header"><a href="https://phet.colorado.edu/en/simulation/balloons-and-static-electricity">Balloons and Static Electricity</a></h3>
-              <a href="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity-600.png" alt="Balloons and Static Electricity" style="border: none;" width="100%" height="100%"/></a>
+
+            <h3 class="page-header"><a href="https://phet.colorado.edu/en/simulation/balloons-and-static-electricity">Balloons and Static Electricity</a></h3>
+            <a href="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity-600.png" alt="Balloons and Static Electricity" style="border: none;" width="100%" height="100%"/></a>
 
           </div>
 
           <div class="col-sm-4">
 
             <h3 class="page-header"><a href="https://phet.colorado.edu/en/simulation/forces-and-motion-basics">Forces and Motion: Basics</a></h3>
-           <a href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics-600.png" alt="Forces and Motion: Basics" style="border: none;" width="100%" height="100%"/></a>
+            <a href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics-600.png" alt="Forces and Motion: Basics" style="border: none;" width="100%" height="100%"/></a>
           </div>
 
 
@@ -318,10 +283,10 @@
 
         <div class="row">
           <div class="col-sm-4">
-        
-              <h3 class="page-header"><a href="https://phet.colorado.edu/en/simulation/energy-skate-park-basics">Energy Skate Park: Basics</a></h3>
-              <a href="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics-600.png" alt="Energy Skate Park: Basics" style="border: none;" width="100%" height="100%"/></a>
-            
+
+            <h3 class="page-header"><a href="https://phet.colorado.edu/en/simulation/energy-skate-park-basics">Energy Skate Park: Basics</a></h3>
+            <a href="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics-600.png" alt="Energy Skate Park: Basics" style="border: none;" width="100%" height="100%"/></a>
+
 
           </div>
 
@@ -335,24 +300,43 @@
 
           <div class="col-sm-4">
             <h3 class="page-header"><a href="https://phet.colorado.edu/en/simulation/energy-skate-park-basics">Bending Light</a></h3>
-              
-                <a href="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light-600.png" alt="Bending Light" style="border: none;" width="100%" height="100%"/></a>
 
-              
+            <a href="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html" style="text-decoration: none;"><img src="https://phet.colorado.edu/sims/html/bending-light/latest/bending-light-600.png" alt="Bending Light" style="border: none;" width="100%" height="100%"/></a>
+
+
           </div>
         </div>
-        <h3>For more labs,visit <a href="https://phet.colorado.edu/en/simulations/category/physics" style:"font-family: 'Anton', sans-serif">https://phet.colorado.edu/en/simulations/category/physics</a></h3>
+        <h3>For more labs,visit <a href="https://phet.colorado.edu/en/simulations/category/physics" style: "font-family: 'Anton', sans-serif">https://phet.colorado.edu/en/simulations/category/physics</a></h3>
       </div>
     </div>
     <br><br><br>
 
 
 
-    <footer class="container-fluid text-center">
-      <p>Practice question</p>
-
-
-    </footer>
+    <footer id="credit" class="container-fluid text-center">
+      <h2 class="page-header">Credit</h2>
+      <div class="jumbotron">
+        <div class="col-sm-4">
+          <h3>Huge thanks to:</h3>
+          <h4>Mr Mueller for helping out when I'm struggling.</h4>
+          <h4>Stack Overflow for helping me out on <a href="https://stackoverflow.com/questions/34573367/responsive-embed-in-bootstrap-3-doesnt-work/34573683">embeding video</a>.</h4>
+          <h4><a href="https://www.w3schools.com">W3schools</a>for giving me inspiration and ideas.</h4>
+        <h4><a href="https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q">CrashCourse</a> for videos on physics topic</h4>
+        </div>
+        <br>
+        <div class="col-sm-4">
+          <h4>Big thanks to:</h4>
+          
+          <h4><a href="www.newscientist.com">www.newscientist.com</a> for image.</h4>
+        </div>
+        <br>
+        <div class="col-sm-4">
+          <h4>small thanks to:</h4>
+          <h4><a href="http://www.physics.org/">www.physics.org</a> for explanation on what is physics.</h4>
+          <h4><a href="https://www.thoughtco.com">www.thoughtco.com</a> for the Fundamental Laws of Physics.</h4>
+        </div>
+      </div>
+</footer>
 
 </body>
 

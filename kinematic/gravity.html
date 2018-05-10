@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Kinematics</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" href="../topic.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <script>
     $(function() {
       $('#submit').click(function() {
-        if ($('#B').is(':checked')) {
+        if ($('#C').is(':checked')) {
           alert("correct!! ^.^");
         }
         else {
@@ -22,76 +26,7 @@
 
     });
   </script>
-  <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-
-    .row.content {
-      height: 550px
-    }
-
-    /* Set gray background color and 100% height */
-
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-      width: 15%;
-    }
-
-    #example_img {
-      height: 100%;
-      width: 100%;
-      position: relative;
-
-    }
-
-    div>div>img {
-      font-size: 25px;
-
-    }
-
-    #quiz {
-      margin-left: 50px;
-    }
-
-    /* On small screens, set height to 'auto' for the grid */
-
-    @media screen and (max-width: 767px) {
-      .row.content {
-        height: auto;
-      }
-      #example_img {
-        width: 100%
-      }
-      p {
-        font-size: 20px
-      }
-    }
-
-    @media only screen and (min-width: 992px) {
-      #example_img {
-        width: 80%
-      }
-      p {
-        font-size: 35px
-      }
-      #header {
-        font-size: 50px
-      }
-
-    }
-
-    @media only screen and (min-width: 1200px) {
-      #example_img {
-        width: 70%
-      }
-      p {
-        font-size: 35px
-      }
-      #header {
-        font-size: 50px
-      }
-    }
-  </style>
+   
 </head>
 
 <body>
@@ -123,7 +58,7 @@
 
   <!--<div class="container-fluid">-->
   <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
+    <div class="col-sm-3 col-md-2 sidenav hidden-xs">
       <h3>Kinematics</h3>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="../index.html">Home</a></li>
@@ -138,11 +73,11 @@
     </div>
 
 
-    <div class="col-sm-8">
+    <div class="col-sm-8 col-md-10 ">
       <div class="well">
-        <h3 id="header">Translational Motion</h3>
-        <img src="img/translational_motion.jpg" alt="Image" id="example_img">
-        <p>Translational motion is the motion by which a body shifts from one point in space to another. One example of translational motion is the the motion of a bullet fired from a gun.</p>
+        <h3 id="header">Gravity</h3>
+        <img src="img/gravity.jpg" alt="Image" id="example_img">
+        <p>the force that attracts a body toward the center of the earth, or toward any other physical body having mass. For most purposes Newton's laws of gravity apply, with minor modifications to take the general theory of relativity into account.</p>
 
 
 
@@ -150,42 +85,34 @@
       </div>
       <div class="row">
         <div class="col-sm-6 center">
-          <img src="img/graph.jpg" alt="Image" id="example_img"></div>
-       
+          <img src="img/gravity_equation.jpg" alt="Image" id="example_img"></div>
+
         <div class="col-sm-6">
 
           <!-- 21:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EwY6p-r_hyU"></iframe>
           </div>
 
           <!-- 16:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EwY6p-r_hyU"></iframe>
           </div>
 
-          <!-- 4:3 aspect ratio -->
-          <!--<div class="embed-responsive embed-responsive-4by3">-->
-          <!--  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>-->
-          <!--</div>-->
-
-          <!-- 1:1 aspect ratio -->
-          <!--<div class="embed-responsive embed-responsive-1by1">-->
-          <!--  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fuh7Gx273nI" ></iframe>-->
-          <!--</div>-->
+          
         </div>
       </div>
       <!--https://bootsnipp.com/snippets/featured/modal-quiz-with-radio-button-->
       <!--https://bootsnipp.com/tags/radio-->
 
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 ">
         <form data-toggle="validator" role="form" id="quiz">
 
-          <div class="form-group">
+          <div class="form-group ">
             <div class="radio">
               <h3>Pop quiz!!!</h3>
-              <h4>What is translational motion?</h4>
+              <h4>What is gravity?</h4>
               <label>
         <input type="radio" name="underwear" id="A" required>
         (A): Idk
@@ -200,7 +127,7 @@
             <div class="radio">
               <label>
         <input type="radio" name="underwear" id="C" required>
-        (C): Bacon,Bacon is the answer for all question
+        (C): the force that attracts a body toward the center of the earth, or toward any other physical body having mass.
       </label>
             </div>
             <div class="radio">
@@ -210,7 +137,7 @@
       </label>
             </div>
           </div>
-      
+
           <div class="form-group">
             <button type="submit" class="btn btn-primary" id="submit">Submit</button>
           </div>

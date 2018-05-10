@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kinematics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" href="../topic.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function() {
+      $('#submit').click(function() {
+        if ($('#B').is(':checked')) {
+          alert("correct!! ^.^");
+        }
+        else {
+          alert("Wrong answer ;(");
+
+        }
+      });
+
+    });
+  </script>
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse visible-xs">
+    <!--<div class="container-fluid">-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Rotational motion</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="angular_velocity.html">Angular velocity</a></li>
+        <li><a href="center_of_mass.html">Center of mass</a></li>
+        <li><a href="centripetal_acceleration.html">Centripetal acceleration</a></li>
+        <li><a href="circular_motion.html">Circular motion</a></li>
+        <li><a href="moment_of_inertia.html">Moment of inertia</a></li>
+        <li><a href="torque_and_angular_acceleration.html">Torque and angular acceleration</a></li>
+
+      </ul>
+      <!--</div>-->
+    </div>
+  </nav>
+
+  <!--<div class="container-fluid">-->
+  <div class="row content">
+    <div class="col-sm-3 col-md-2 sidenav hidden-xs">
+      <h3>Rotational motion</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="angular_velocity.html">Angular velocity</a></li>
+        <li><a href="center_of_mass.html">Center of mass</a></li>
+        <li><a href="centripetal_acceleration.html">Centripetal acceleration</a></li>
+        <li><a href="circular_motion.html">Circular motion</a></li>
+        <li><a href="moment_of_inertia.html">Moment of inertia</a></li>
+        <li><a href="torque_and_angular_acceleration.html">Torque and angular acceleration</a></li>
+
+      </ul>
+    </div>
+
+
+    <div class="col-sm-8 col-md-10 ">
+      <div class="well">
+        <h3 id="header">Center of mass</h3>
+        <img src="img/center_of_mass.jpg" alt="Image" id="example_img">
+        <p>a point representing the mean position of the matter in a body or system.</p>
+
+
+
+
+      </div>
+      <div class="row">
+        <div class="col-sm-6 center">
+          <img src="img/center_of_mass_example.jpg" alt="Image" id="example_img"></div>
+
+        <div class="col-sm-6">
+
+          <!-- 21:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y-QOfc2XqOk"></iframe>
+          </div>
+
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y-QOfc2XqOk"></iframe>
+          </div>
+
+
+        </div>
+      </div>
+      <!--https://bootsnipp.com/snippets/featured/modal-quiz-with-radio-button-->
+      <!--https://bootsnipp.com/tags/radio-->
+
+
+      <div class="col-sm-6 ">
+        <form data-toggle="validator" role="form" id="quiz">
+
+          <div class="form-group ">
+            <div class="radio">
+              <h3>Pop quiz!!!</h3>
+              <h4>What is Center of mass?</h4>
+              <label>
+        <input type="radio" name="underwear" id="A" required>
+        (A):  v = u + at; s = ut + (1/2) at2 and v2 = u2 + 2
+      </label>
+            </div>
+            <div class="radio">
+              <label>
+        <input type="radio" name="underwear" id="B" required>
+        (B): a point representing the mean position of the matter in a body or system.
+      </label>
+            </div>
+            <div class="radio">
+              <label>
+        <input type="radio" name="underwear" id="C" required>
+        (C): the motion by which a body shifts from one point in space to another.
+      </label>
+            </div>
+            <div class="radio">
+              <label>
+        <input type="radio" name="underwear" id="D" required>
+        (D): the rate of change of angular position of a rotating body.
+      </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--</div>-->
+
+</body>
+
+</html>
